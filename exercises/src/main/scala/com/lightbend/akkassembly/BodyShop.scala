@@ -2,8 +2,9 @@ package com.lightbend.akkassembly
 
 import java.util.concurrent.TimeUnit
 
+import akka.NotUsed
 import akka.actor.Cancellable
-import akka.stream.scaladsl.Source
+import akka.stream.scaladsl.{Flow, Source}
 
 import scala.concurrent.duration.FiniteDuration
 
