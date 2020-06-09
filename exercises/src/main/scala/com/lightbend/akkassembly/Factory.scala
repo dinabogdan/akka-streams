@@ -18,7 +18,9 @@ class Factory(
     bodyShop.cars
       .via(paintShop.paint)
       .via(engineShop.installEngine)
+      .async
       .via(wheelShop.installWheels)
+      .async
       .via(upgradeShop.installUpgrades)
       .via(qualityAssurance.inspect)
       .take(quantity)
